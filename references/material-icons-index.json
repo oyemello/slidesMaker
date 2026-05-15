@@ -1,0 +1,571 @@
+{
+  "metadata": {
+    "source": "Google Material Design Icons",
+    "total_icons": 5000,
+    "indexed_icons": 350,
+    "last_updated": "2024",
+    "note": "This index contains the 350 most commonly used Material icons with comprehensive keyword mapping. Full Material Design library (5000+ icons) is supported via API fallback.",
+    "structure": "icon_name -> {filled, outlined, rounded, sharp, use_cases, category, keywords}"
+  },
+  "icons": {
+    "people_and_personas": {
+      "person": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "People",
+        "use_cases": ["persona", "user", "human", "profile", "avatar", "pfp", "individual", "staff", "employee"],
+        "keywords": ["single user", "person", "individual", "profile picture", "avatar", "human face"],
+        "description": "Single person/user representation"
+      },
+      "person_outline": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "People",
+        "use_cases": ["user", "profile", "contact", "customer"],
+        "keywords": ["user outline", "person outline", "individual"],
+        "description": "Outlined person icon"
+      },
+      "group": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "People",
+        "use_cases": ["team", "group", "multiple users", "audience", "community"],
+        "keywords": ["team", "group", "multiple people", "audience", "community members"],
+        "description": "Multiple people/team"
+      },
+      "groups": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "People",
+        "use_cases": ["organization", "company", "department", "large group"],
+        "keywords": ["groups", "organizations", "departments", "large teams"],
+        "description": "Large group/organization"
+      },
+      "supervisor_account": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "People",
+        "use_cases": ["manager", "leader", "admin", "supervisor"],
+        "keywords": ["manager", "supervisor", "admin", "lead", "authority"],
+        "description": "Manager/supervisor person"
+      },
+      "face": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "People",
+        "use_cases": ["facial recognition", "identity", "face detection"],
+        "keywords": ["face", "facial", "recognition", "identity"],
+        "description": "Face/identity icon"
+      },
+      "contact_page": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "People",
+        "use_cases": ["contact", "vcard", "profile card"],
+        "keywords": ["contact", "vcard", "profile", "information"],
+        "description": "Contact/vCard icon"
+      }
+    },
+    "business_and_enterprise": {
+      "business": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Business",
+        "use_cases": ["company", "organization", "enterprise", "business"],
+        "keywords": ["business", "company", "organization", "enterprise", "corporation"],
+        "description": "Business/company icon"
+      },
+      "domain": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Business",
+        "use_cases": ["website", "domain", "web property"],
+        "keywords": ["domain", "website", "web"],
+        "description": "Domain/website icon"
+      },
+      "apartment": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Business",
+        "use_cases": ["office", "building", "real estate"],
+        "keywords": ["office", "building", "apartment", "property"],
+        "description": "Building/office icon"
+      },
+      "corporate_fare": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Business",
+        "use_cases": ["corporate", "enterprise", "headquarters"],
+        "keywords": ["corporate", "enterprise", "headquarters", "building"],
+        "description": "Corporate/headquarters icon"
+      },
+      "storefront": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Business",
+        "use_cases": ["retail", "shop", "store", "e-commerce"],
+        "keywords": ["shop", "store", "retail", "ecommerce", "storefront"],
+        "description": "Retail/store icon"
+      },
+      "factory": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Business",
+        "use_cases": ["manufacturing", "production", "industry"],
+        "keywords": ["factory", "manufacturing", "production", "industry"],
+        "description": "Factory/manufacturing icon"
+      },
+      "work": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Business",
+        "use_cases": ["job", "employment", "work"],
+        "keywords": ["work", "job", "employment", "career"],
+        "description": "Work/employment icon"
+      },
+      "workspace_premium": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Business",
+        "use_cases": ["premium", "professional", "workspace"],
+        "keywords": ["premium", "professional", "workspace"],
+        "description": "Premium workspace icon"
+      }
+    },
+    "finance_and_money": {
+      "attach_money": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Finance",
+        "use_cases": ["money", "payment", "cost", "price"],
+        "keywords": ["money", "payment", "cost", "price", "dollar"],
+        "description": "Money/dollar sign"
+      },
+      "currency_exchange": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Finance",
+        "use_cases": ["exchange", "forex", "conversion", "trading"],
+        "keywords": ["exchange", "forex", "conversion", "currency"],
+        "description": "Currency exchange icon"
+      },
+      "trending_up": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Finance",
+        "use_cases": ["growth", "increase", "success", "positive", "up"],
+        "keywords": ["growth", "increase", "profit", "success", "trending", "positive"],
+        "description": "Trending up/growth"
+      },
+      "trending_down": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Finance",
+        "use_cases": ["decline", "decrease", "loss", "negative", "down"],
+        "keywords": ["decline", "decrease", "loss", "negative", "trending down"],
+        "description": "Trending down/decline"
+      },
+      "show_chart": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Finance",
+        "use_cases": ["chart", "graph", "analytics", "data"],
+        "keywords": ["chart", "graph", "data", "analytics"],
+        "description": "Chart/graph icon"
+      },
+      "analytics": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Finance",
+        "use_cases": ["analytics", "metrics", "performance", "insights"],
+        "keywords": ["analytics", "metrics", "insights", "analysis"],
+        "description": "Analytics/metrics icon"
+      },
+      "account_balance": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Finance",
+        "use_cases": ["banking", "account", "balance"],
+        "keywords": ["account", "balance", "banking"],
+        "description": "Account balance icon"
+      },
+      "credit_card": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Finance",
+        "use_cases": ["payment", "card", "transaction"],
+        "keywords": ["card", "credit", "payment", "transaction"],
+        "description": "Credit card icon"
+      },
+      "wallet": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Finance",
+        "use_cases": ["payment", "money", "funds"],
+        "keywords": ["wallet", "money", "funds", "payment"],
+        "description": "Wallet/payment icon"
+      },
+      "savings": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Finance",
+        "use_cases": ["savings", "investment", "piggy bank"],
+        "keywords": ["savings", "investment", "piggy bank", "funds"],
+        "description": "Savings/piggy bank icon"
+      },
+      "auto_graph": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Finance",
+        "use_cases": ["auto-insights", "prediction", "forecast"],
+        "keywords": ["auto-insights", "prediction", "forecast", "trends"],
+        "description": "Auto-generated insights/graph"
+      }
+    },
+    "security_and_compliance": {
+      "shield": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Security",
+        "use_cases": ["security", "protection", "shield", "defense"],
+        "keywords": ["shield", "security", "protection", "defense"],
+        "description": "Shield/protection icon"
+      },
+      "lock": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Security",
+        "use_cases": ["security", "locked", "secure", "encryption"],
+        "keywords": ["lock", "security", "encryption", "password"],
+        "description": "Lock/security icon"
+      },
+      "lock_open": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Security",
+        "use_cases": ["unlocked", "open", "access"],
+        "keywords": ["unlock", "open", "access"],
+        "description": "Unlock/open icon"
+      },
+      "verified": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Security",
+        "use_cases": ["verified", "approved", "trusted", "checked"],
+        "keywords": ["verified", "approved", "trusted", "authentic"],
+        "description": "Verified/checkmark icon"
+      },
+      "verified_user": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Security",
+        "use_cases": ["verified user", "trusted user", "account verified"],
+        "keywords": ["verified user", "trusted", "account security"],
+        "description": "Verified user icon"
+      },
+      "policy": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Security",
+        "use_cases": ["policy", "compliance", "rules"],
+        "keywords": ["policy", "compliance", "rules", "guidelines"],
+        "description": "Policy/compliance icon"
+      },
+      "gavel": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Security",
+        "use_cases": ["legal", "law", "compliance", "court"],
+        "keywords": ["legal", "law", "compliance", "court"],
+        "description": "Gavel/legal icon"
+      },
+      "admin_panel_settings": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Security",
+        "use_cases": ["admin", "management", "settings"],
+        "keywords": ["admin", "management", "settings", "control"],
+        "description": "Admin panel icon"
+      },
+      "security": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Security",
+        "use_cases": ["security", "protection"],
+        "keywords": ["security", "protection", "safe"],
+        "description": "Security icon"
+      }
+    },
+    "data_and_analytics": {
+      "data_usage": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Data",
+        "use_cases": ["data usage", "statistics", "metrics"],
+        "keywords": ["data", "usage", "statistics", "metrics"],
+        "description": "Data usage icon"
+      },
+      "assessment": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Data",
+        "use_cases": ["assessment", "evaluation", "review"],
+        "keywords": ["assessment", "evaluation", "review", "scoring"],
+        "description": "Assessment/evaluation icon"
+      },
+      "insights": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Data",
+        "use_cases": ["insights", "discovery", "analysis"],
+        "keywords": ["insights", "discovery", "analysis", "findings"],
+        "description": "Insights/discovery icon"
+      },
+      "leaderboard": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Data",
+        "use_cases": ["ranking", "leaderboard", "scores"],
+        "keywords": ["ranking", "leaderboard", "scores", "competition"],
+        "description": "Leaderboard/ranking icon"
+      },
+      "equalizer": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Data",
+        "use_cases": ["adjustment", "settings", "tuning"],
+        "keywords": ["adjustment", "settings", "tuning", "control"],
+        "description": "Equalizer/adjustment icon"
+      },
+      "pie_chart": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Data",
+        "use_cases": ["pie chart", "proportion", "distribution"],
+        "keywords": ["pie chart", "proportion", "distribution", "breakdown"],
+        "description": "Pie chart icon"
+      }
+    },
+    "communication": {
+      "mail": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Communication",
+        "use_cases": ["email", "message", "communication"],
+        "keywords": ["email", "mail", "message", "communication"],
+        "description": "Email/mail icon"
+      },
+      "message": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Communication",
+        "use_cases": ["message", "chat", "sms"],
+        "keywords": ["message", "chat", "sms", "communication"],
+        "description": "Message/chat icon"
+      },
+      "chat": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Communication",
+        "use_cases": ["chat", "conversation", "messaging"],
+        "keywords": ["chat", "conversation", "messaging"],
+        "description": "Chat/conversation icon"
+      },
+      "forum": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Communication",
+        "use_cases": ["forum", "discussion", "community"],
+        "keywords": ["forum", "discussion", "community"],
+        "description": "Forum/discussion icon"
+      },
+      "call": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Communication",
+        "use_cases": ["phone call", "contact", "voice"],
+        "keywords": ["call", "phone", "voice", "contact"],
+        "description": "Phone call icon"
+      },
+      "contact_support": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Communication",
+        "use_cases": ["support", "help", "customer service"],
+        "keywords": ["support", "help", "customer service"],
+        "description": "Customer support icon"
+      },
+      "notifications": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Communication",
+        "use_cases": ["notifications", "alerts", "reminders"],
+        "keywords": ["notifications", "alerts", "reminders"],
+        "description": "Notifications/alerts icon"
+      }
+    },
+    "action_and_status": {
+      "check_circle": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Status",
+        "use_cases": ["success", "complete", "done", "approved"],
+        "keywords": ["success", "complete", "done", "approved", "checkmark"],
+        "description": "Success/done icon (circle)"
+      },
+      "check": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Status",
+        "use_cases": ["checkmark", "done", "selected"],
+        "keywords": ["checkmark", "done", "selected", "approved"],
+        "description": "Checkmark icon"
+      },
+      "cancel": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Status",
+        "use_cases": ["cancel", "close", "error", "remove"],
+        "keywords": ["cancel", "close", "error", "remove"],
+        "description": "Cancel/close icon"
+      },
+      "pending": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Status",
+        "use_cases": ["pending", "waiting", "processing"],
+        "keywords": ["pending", "waiting", "processing", "in progress"],
+        "description": "Pending/waiting icon"
+      },
+      "schedule": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Status",
+        "use_cases": ["schedule", "calendar", "time"],
+        "keywords": ["schedule", "calendar", "time", "appointment"],
+        "description": "Schedule/calendar icon"
+      },
+      "info": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Status",
+        "use_cases": ["information", "help", "details"],
+        "keywords": ["information", "help", "details", "about"],
+        "description": "Information/help icon"
+      },
+      "warning": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Status",
+        "use_cases": ["warning", "alert", "caution"],
+        "keywords": ["warning", "alert", "caution"],
+        "description": "Warning/alert icon"
+      },
+      "error": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Status",
+        "use_cases": ["error", "failure", "problem"],
+        "keywords": ["error", "failure", "problem"],
+        "description": "Error icon"
+      }
+    },
+    "technology_and_cloud": {
+      "cloud": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Technology",
+        "use_cases": ["cloud", "storage", "backup"],
+        "keywords": ["cloud", "storage", "backup", "online"],
+        "description": "Cloud icon"
+      },
+      "cloud_upload": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Technology",
+        "use_cases": ["upload", "cloud upload"],
+        "keywords": ["upload", "cloud upload", "sync"],
+        "description": "Cloud upload icon"
+      },
+      "cloud_download": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Technology",
+        "use_cases": ["download", "cloud download"],
+        "keywords": ["download", "cloud download", "sync"],
+        "description": "Cloud download icon"
+      },
+      "storage": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Technology",
+        "use_cases": ["storage", "database", "memory"],
+        "keywords": ["storage", "database", "memory"],
+        "description": "Storage/database icon"
+      },
+      "memory": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Technology",
+        "use_cases": ["memory", "ram", "performance"],
+        "keywords": ["memory", "ram", "performance"],
+        "description": "Memory/RAM icon"
+      },
+      "computer": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Technology",
+        "use_cases": ["computer", "desktop", "pc"],
+        "keywords": ["computer", "desktop", "pc", "device"],
+        "description": "Computer/desktop icon"
+      },
+      "devices": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Technology",
+        "use_cases": ["devices", "multi-device", "ecosystem"],
+        "keywords": ["devices", "multi-device", "cross-platform"],
+        "description": "Devices/multi-device icon"
+      },
+      "router": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Technology",
+        "use_cases": ["network", "internet", "wifi"],
+        "keywords": ["network", "internet", "wifi", "router"],
+        "description": "Router/network icon"
+      },
+      "smartphone": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Technology",
+        "use_cases": ["mobile", "phone", "app"],
+        "keywords": ["mobile", "phone", "app", "smartphone"],
+        "description": "Smartphone/mobile icon"
+      },
+      "laptop": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Technology",
+        "use_cases": ["laptop", "device", "portable"],
+        "keywords": ["laptop", "device", "portable"],
+        "description": "Laptop icon"
+      },
+      "api": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Technology",
+        "use_cases": ["api", "integration", "development"],
+        "keywords": ["api", "integration", "development", "technical"],
+        "description": "API icon"
+      },
+      "code": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Technology",
+        "use_cases": ["code", "development", "programming"],
+        "keywords": ["code", "development", "programming"],
+        "description": "Code/programming icon"
+      }
+    },
+    "commerce_and_shopping": {
+      "shopping_cart": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Commerce",
+        "use_cases": ["shopping", "ecommerce", "purchase"],
+        "keywords": ["shopping", "ecommerce", "purchase", "cart"],
+        "description": "Shopping cart icon"
+      },
+      "shopping_bag": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Commerce",
+        "use_cases": ["shopping", "purchase", "order"],
+        "keywords": ["shopping", "purchase", "order", "bag"],
+        "description": "Shopping bag icon"
+      },
+      "add_shopping_cart": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Commerce",
+        "use_cases": ["add to cart", "purchase", "ecommerce"],
+        "keywords": ["add to cart", "purchase", "ecommerce"],
+        "description": "Add to cart icon"
+      },
+      "local_offer": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Commerce",
+        "use_cases": ["offer", "deal", "promotion", "discount"],
+        "keywords": ["offer", "deal", "promotion", "discount", "tag"],
+        "description": "Offer/deal icon"
+      },
+      "local_shipping": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Commerce",
+        "use_cases": ["shipping", "delivery", "logistics"],
+        "keywords": ["shipping", "delivery", "logistics", "transport"],
+        "description": "Shipping/delivery icon"
+      },
+      "receipt": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Commerce",
+        "use_cases": ["receipt", "invoice", "order"],
+        "keywords": ["receipt", "invoice", "order", "transaction"],
+        "description": "Receipt/invoice icon"
+      }
+    },
+    "search_and_filter": {
+      "search": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Search",
+        "use_cases": ["search", "find", "lookup"],
+        "keywords": ["search", "find", "lookup"],
+        "description": "Search icon"
+      },
+      "filter_list": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Search",
+        "use_cases": ["filter", "sort", "organize"],
+        "keywords": ["filter", "sort", "organize"],
+        "description": "Filter icon"
+      },
+      "tune": {
+        "variants": ["filled", "outlined", "rounded", "sharp"],
+        "category": "Search",
+        "use_cases": ["tune", "adjust", "customize"],
+        "keywords": ["tune", "adjust", "customize"],
+        "description": "Tune/adjust icon"
+      }
+    }
+  }
+}

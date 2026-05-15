@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "name": "American Express Brand Colors",
+    "status": "STUB - User to populate",
+    "last_updated": "2024-05-15"
+  },
+  "primary": "#0066CC",
+  "secondary": "#FF6600",
+  "accent": "#00AA44",
+  "neutral": {
+    "dark": "#1A1A1A",
+    "medium": "#666666",
+    "light": "#F5F5F5"
+  },
+  "semantic": {
+    "success": "#00AA44",
+    "warning": "#FFAA00",
+    "danger": "#DD0000",
+    "info": "#0066CC"
+  },
+  "text": {
+    "primary": "#1A1A1A",
+    "secondary": "#666666",
+    "light": "#FFFFFF"
+  },
+  "background": {
+    "primary": "#FFFFFF",
+    "secondary": "#F5F5F5",
+    "dark": "#1A1A1A"
+  },
+  "note": "Replace these default colors with your American Express brand colors. Format: hex codes (#RRGGBB)"
+}
