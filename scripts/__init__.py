@@ -5,5 +5,23 @@ Scripts for generating and managing PowerPoint presentations.
 
 from .create_pptx import PowerPointGenerator, SlideLayout
 from .icon_manager import IconManager
+from .design_system import (
+    DesignSystemReader,
+    DesignApplier,
+    ColorToken,
+    TypographyRule,
+    create_design_reader,
+    create_design_applier,
+)
 
-__all__ = ["PowerPointGenerator", "IconManager", "SlideLayout"]
+__all__ = [
+    "PowerPointGenerator",
+    "IconManager",
+    "SlideLayout",
+    "DesignSystemReader",
+    "DesignApplier",
+    "ColorToken",
+    "TypographyRule",
+    "create_design_reader",
+    "create_design_applier",
+]
