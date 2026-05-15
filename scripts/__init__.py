@@ -13,6 +13,7 @@ from .design_system import (
     create_design_reader,
     create_design_applier,
 )
+from .markdown_parser import MarkdownParser, Slide, Metric, parse_markdown
 
 __all__ = [
     "PowerPointGenerator",
@@ -24,4 +25,8 @@ __all__ = [
     "TypographyRule",
     "create_design_reader",
     "create_design_applier",
+    "MarkdownParser",
+    "Slide",
+    "Metric",
+    "parse_markdown",
 ]
