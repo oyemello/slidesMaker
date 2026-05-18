@@ -1,179 +1,179 @@
 ---
 name: amex-pptx-maker
-description: Create professional American Express PowerPoint presentations from markdown files. User provides a markdown file with content (filename.md) and the skill generates a polished, banker-grade .pptx automatically. Applies professional design system, colors, and typography without requiring any design specification. Use this skill whenever the user wants to make a .pptx from markdown content.
-compatibility: python-pptx
+description: Create professional American Express PowerPoint presentations from markdown files using pre-designed infographic components. User writes content in markdown, adds .pptx or .odp infographic templates to references/components/, and the skill generates a polished .pptx automatically. No design work needed—just content + components.
+compatibility: python-pptx, LibreOffice (for ODP conversion)
 ---
 
 # AmEx PowerPoint Presentation Maker
 
-Generate professional, designer-quality PowerPoint presentations instantly. Provide your content in markdown, the skill handles all the design.
+Generate professional, designer-quality presentations from markdown + infographic components.
+
+**You provide:** Content (markdown) + Components (pre-designed .pptx/.odp files)  
+**Skill does:** Parse content, load components, fill with data, output .pptx
 
 ## How It Works
 
-**You do:** Write content in a markdown file  
-**Skill does:** Read it, intelligently parse it, apply professional design system, output .pptx
+```
+content.md (your content)
+    ↓
+    ├→ Parse: "4 metrics with +percentages" → need metric-grid component
+    ├→ Load: references/components/metric-grid-4.pptx
+    ├→ Clone: Copy the professionally-designed slide
+    ├→ Fill: Update with your Revenue, Customers, etc. values
+    └→ Result: Professional metric infographic in presentation
+```
 
-That's it.
+## Component-Based Design
+
+Instead of generating layouts, **reuse pre-designed infographic components**:
+
+```
+references/components/
+├── metric-grid-4.pptx          # 2×2 metric boxes (designed once, reused always)
+├── metric-grid-3.pptx          # 3-metric layout
+├── comparison-panel.pptx       # Traditional vs AmEx split layout
+├── feature-grid-3.pptx         # 3-column feature cards
+├── impact-statement.pptx       # Bold closing statement
+└── icon-grid.pptx              # Icon-based grid
+
++ Supports .odp (LibreOffice) format—automatically converted to .pptx
+```
+
+**Why this works:**
+- Designers create pixel-perfect infographics once in PowerPoint/LibreOffice
+- LLM clones them and fills with your data
+- Like React components: define once, reuse with different props
+- Update a component, all presentations using it improve automatically
 
 ## Markdown Format
 
-Create a file (e.g., `content.md`) with this simple structure:
+Create `content.md` with this structure:
 
 ```markdown
 # Presentation Title
-Optional subtitle or tagline
+Optional subtitle
 
 ## Slide 1 Title
-Content for slide 1. Can be:
-- Bullet points
-- Or key: value pairs for metrics
-- Or just text
+Regular text content
 
-## Slide 2 Title: Financial Results
-Revenue: $2.3B (+15%)
-Customers: 52M (+8%)
-Net Income: $450M (+22%)
-
-## Slide 3 Title: Why We Lead
-- Security: Bank-grade protection
-- Speed: Instant transactions
-- Support: 24/7 availability
-
-## Closing Thought
-"The Future of Finance"
-Digital. Secure. Personal.
-```
-
-The skill **automatically detects**:
-- `# Title` = presentation title
-- `## Heading` = slide heading
-- `Key: Value (+/−percentage)` = financial metrics (auto-colored green/red)
-- `- Bullet` = feature/benefit list
-- Plain text = paragraph content
-- `"Quote"` = impact/closing statement
-
-## Example Usage
-
-Just ask:
-```
-Create a PowerPoint from content.md
-```
-
-Or:
-```
-Make a presentation using Q2-results.md
-```
-
-The skill will:
-1. Read your markdown file
-2. Parse each section as a slide
-3. Intelligently detect slide type (metrics, features, closing, etc.)
-4. Apply the AmEx design system (colors, typography, spacing)
-5. Auto-color metrics (green for growth +, red for decline −)
-6. Output a professional presentation.pptx
-
-## What Gets Applied Automatically
-
-✅ **Professional colors** — AmEx blue (#0066CC), semantic greens/reds, premium cream background  
-✅ **Typography hierarchy** — Inter font, proper sizes and weights per content type  
-✅ **Spacing & rhythm** — Professional margins, padding, whitespace  
-✅ **Visual hierarchy** — What's important looks important  
-✅ **Semantic coloring** — +15% is green, −5% is red, CTAs are blue  
-✅ **Component styling** — Metric boxes, feature cards, comparison panels, impact statements  
-✅ **Material Design icons** — 5,000+ icons, indexed by use case (person = user/profile/avatar)  
-✅ **Responsive layout** — Adapts to content length and type  
-
-You describe what to say. The skill handles how it looks.
-
-## Markdown Examples
-
-### Example 1: Financial Report
-```markdown
-# Q2 2024 Financial Review
-
-## Executive Summary
-Strong growth across all segments with record customer acquisition.
-
-## Metrics
+## Metrics Section
 Revenue: $2.3B (+15%)
 Customers: 52M (+8%)
 Net Income: $450M (+22%)
 Cards: 18M (+12%)
 
-## Market Position
-- #1 in premium payments
-- Fastest growing segment: fintech partnerships
-- Largest decline: legacy in-person transactions
+## Features Section
+- Security: Bank-grade protection
+- Speed: Instant transactions
+- Support: 24/7 support
 
-## Next Steps
-Focus on digital expansion and mobile app features.
-```
+## Comparison
+Traditional: Limited
+AmEx: Full-featured
 
-**Output:** Title slide → text slide → metrics slide (auto-colored) → features slide → closing slide
-
-### Example 2: Product Features
-```markdown
-# Why Choose AmEx
-
-## Security
-- Bank-grade encryption
-- Fraud detection 24/7
-- Zero liability guarantee
-
-## Convenience
-- Mobile app access
-- One-click payments
-- Global acceptance
-
-## Exclusive Benefits
-- Premium travel lounge access
-- Concierge service
-- Rewards program
-
-## Join Today
-"The Most Trusted Payments Partner"
-Available on all devices. Apply in 5 minutes.
-```
-
-**Output:** Title slide → 3 feature slides (one per bullet group) → impact closing slide
-
-### Example 3: Comparison
-```markdown
-# Traditional vs AmEx
-
-## Speed
-Traditional: 3-5 business days
+Traditional: 3-5 days
 AmEx: Instant
 
-## Mobile
-Traditional: Limited
-AmEx: Full-featured app
-
-## Support
-Traditional: Business hours only
-AmEx: 24/7 available
+## Closing
+"The Future of Finance"
+Digital. Secure. Personal.
 ```
 
-**Output:** Title → comparison panel (Traditional vs AmEx side-by-side)
+The skill detects:
+- `Key: Value (+/−%)` → metrics slide (loads metric-grid component)
+- `- Title: Description` → features slide (loads feature-grid component)
+- `Traditional: ... AmEx: ...` → comparison slide (loads comparison-panel)
+- `"Quote"` → impact statement (loads impact-statement)
+- Text only → text slide (no component needed)
 
-## What You Customize
+## Workflow
 
-Edit `references/DESIGN.md` to change:
-- Brand colors (currently AmEx blue, green, red, cream)
-- Typography (currently Inter font family)
-- Spacing rules
-- Component styling
+### 1. Create Your Components (One-Time)
 
-Everything else flows from that one design file.
+In PowerPoint or LibreOffice:
+- Design a 2×2 metric grid → save as `metric-grid-4.pptx`
+- Design a feature card layout → save as `feature-grid-3.pptx`
+- Design a comparison panel → save as `comparison-panel.pptx`
+- Add them to `references/components/`
+
+The skill will:
+- Use `.pptx` files directly
+- Auto-convert `.odp` files to `.pptx`
+
+### 2. Write Your Content
+
+Create `content.md` with your presentation narrative. Don't worry about design.
+
+### 3. Run the Skill
+
+```
+Create a PowerPoint from content.md
+```
+
+The skill:
+1. Parses markdown
+2. Detects each slide type
+3. Loads matching component
+4. Clones it into the presentation
+5. Fills with your content
+6. Outputs presentation.pptx
+
+## Example: Financial Deck
+
+**content.md:**
+```markdown
+# Q2 2024 Results
+
+## Financial Metrics
+Revenue: $2.3B (+15%)
+Customers: 52M (+8%)
+Net Income: $450M (+22%)
+Cards: 18M (+12%)
+
+## Product Strengths
+- Security: Bank-grade protection
+- Mobile: Full-featured app
+- Support: 24/7 availability
+
+## Closing
+"Leading the Digital Revolution"
+Trust. Speed. Innovation.
+```
+
+**What happens:**
+1. Skill loads `metric-grid-4.pptx` → copies slide
+2. Fills with $2.3B, +15%, etc.
+3. Loads `feature-grid-3.pptx` → copies slide
+4. Fills with Security, Mobile, Support
+5. Creates simple closing slide with quote
+6. Output: Professional presentation in 10 seconds
 
 ## Tips
 
-- **Keep it simple:** Markdown is enough. No PowerPoint templates needed.
-- **Metrics matter:** Use `Value (+percentage)` or `Value (−percentage)` for smart coloring.
-- **Section hierarchy:** Each `##` becomes a slide. Each topic area = one slide.
-- **Icons:** If you mention "growth", "security", "user", the skill will intelligently select appropriate Material Design icons.
-- **Closing strong:** Save an impactful quote for the last slide.
+- **Design once, use many times:** Create components in PowerPoint/LibreOffice, reuse across all presentations
+- **ODP support:** You can use LibreOffice presentations (.odp)—they're auto-converted
+- **Keep content simple:** Markdown is all you need
+- **Metrics format:** Always use `Value (+/−percentage)` for semantic coloring
+- **Features format:** `- Title: Description` for paired labels
+
+## File Structure
+
+```
+pptMaker/
+├── content.md                    ← Your content (you write this)
+├── output.pptx                   ← Generated presentation
+└── references/
+    └── components/
+        ├── metric-grid-4.pptx    ← Component (you design in PowerPoint)
+        ├── feature-grid-3.pptx   ← Component
+        ├── comparison-panel.pptx ← Component
+        ├── impact-statement.odp  ← Or use LibreOffice format!
+        └── ...
+```
 
 ## That's It
 
-Write your content. Run the skill. Get a professional presentation. Done.
+1. Design components in PowerPoint/LibreOffice
+2. Write content in markdown
+3. Run the skill
+4. Get professional presentation

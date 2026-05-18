@@ -14,6 +14,11 @@ from .design_system import (
     create_design_applier,
 )
 from .markdown_parser import MarkdownParser, Slide, Metric, parse_markdown
+from .component_loader import (
+    ComponentLibrary,
+    ComponentFiller,
+    create_component_library,
+)
 
 __all__ = [
     "PowerPointGenerator",
@@ -29,4 +34,7 @@ __all__ = [
     "Slide",
     "Metric",
     "parse_markdown",
+    "ComponentLibrary",
+    "ComponentFiller",
+    "create_component_library",
 ]
